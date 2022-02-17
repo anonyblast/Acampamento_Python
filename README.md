@@ -10,3 +10,13 @@
     - Escrita de texto
     - print
     - input
+
+### AULA 02
+> Assuntos abordados 
+- Revisão rápida da aula anterior
+- Formatação de strings
+- Uso de variáveis
+    - Como declarar
+    - Nomes válidos
+    - Tipagem
+- Exercícios 
