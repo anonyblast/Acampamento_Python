@@ -20,3 +20,11 @@
     - Nomes válidos
     - Tipagem
 - Exercícios 
+
+### AULA 03
+> Assuntos abordados 
+- Revisão rápida da aula anterior
+- Estruturas condicionais
+  - If, If e Else
+- Exercícios
+- Desafio Extra
