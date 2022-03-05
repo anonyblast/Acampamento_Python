@@ -31,7 +31,6 @@
 
 ## Desafios - Overview
 > Foram propostos 11 questões como desafios de prática de lógica de programação
-> Assuntos abordados:
 - Operações Aritméticas
 - Métodos de String
 - Métodos Númericos
