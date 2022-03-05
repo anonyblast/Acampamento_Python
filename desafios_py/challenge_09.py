@@ -27,6 +27,6 @@ elif (jogador_1 == numero_aleatorio) and (jogador_2 == jogador_1):
 elif ((numero_aleatorio - 3) <= jogador_1 <= (numero_aleatorio + 3)):
     print(f'O jogador 1 venceu! Foi sorteado o número {numero_aleatorio} e ele disse {jogador_1}, errou por {numero_aleatorio - jogador_1}.')
 elif ((numero_aleatorio - 3) <= jogador_2 <= (numero_aleatorio + 3)):
-    print(f'O jogador 1 venceu! Foi sorteado o número {numero_aleatorio} e ele disse {jogador_2}, errou por {numero_aleatorio - jogador_2}.')
+    print(f'O jogador 2 venceu! Foi sorteado o número {numero_aleatorio} e ele disse {jogador_2}, errou por {numero_aleatorio - jogador_2}.')
 else:
     print(f'Tentem novamente.')
