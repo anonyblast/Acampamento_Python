@@ -35,3 +35,11 @@
 - Métodos de String
 - Métodos Númericos
   * Para mais detalhes, o enunciado de cada questão estão em seus respectivos arquivos
+
+### AULA 04
+> Assuntos abordados 
+- Revisão rápida da aula anterior
+- Estruturas condicionais
+  - If, Elif e Else
+- Exercícios
+- Desafio Extra

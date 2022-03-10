@@ -20,10 +20,10 @@ jogador_2 = int(input('Jogador 2, qual número eu sorteei? '))
 
 if (jogador_1 < limite_inferior or jogador_1 > limite_superior) or (jogador_2 < limite_inferior or jogador_2 > limite_superior):
     print(f'Apenas números entre {limite_inferior} e {limite_superior}')
-elif jogador_1 == numero_aleatorio or jogador_2 == numero_aleatorio:
-    print(f'Quem chutou {numero_aleatorio} acertou na mosca!')
 elif (jogador_1 == numero_aleatorio) and (jogador_2 == jogador_1):
     print('Empate!')
+elif jogador_1 == numero_aleatorio or jogador_2 == numero_aleatorio:
+    print(f'Quem chutou {numero_aleatorio} acertou na mosca!')
 elif ((numero_aleatorio - 3) <= jogador_1 <= (numero_aleatorio + 3)):
     print(f'O jogador 1 venceu! Foi sorteado o número {numero_aleatorio} e ele disse {jogador_1}, errou por {numero_aleatorio - jogador_1}.')
 elif ((numero_aleatorio - 3) <= jogador_2 <= (numero_aleatorio + 3)):
