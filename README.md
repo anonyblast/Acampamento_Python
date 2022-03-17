@@ -43,3 +43,11 @@
   - If, Elif e Else
 - Exercícios
 - Desafio Extra
+
+### AULA 05
+> Assuntos abordados 
+- Revisão rápida da aula anterior
+- Laços de Repetição
+  - While
+- Exercícios
+- Desafio Extra
