@@ -34,38 +34,75 @@
 
 
 # Desafio 01
-candidate_1, candidate_2, candidate_3 = 1, 2, 3
+# candidate_1, candidate_2, candidate_3 = 1, 2, 3
 
-ballot_box = []
-default_value = 0
-total_votes = 0
+# ballot_box = []
+# default_value = 0
+# total_votes = 0
 
-while True:
-    voting_paper = int(input('Digite o número do candidato 1, 2 ou 3: '))
-    ballot_box.append(voting_paper)
-    if voting_paper == -1:
-        break
-    if voting_paper > 3:
-        default_value += 1 
-    total_votes += 1
+# while True:
+#     voting_paper = int(input('Digite o número do candidato 1, 2 ou 3: '))
+#     ballot_box.append(voting_paper)
+#     if voting_paper == -1:
+#         break
+#     if voting_paper > 3:
+#         default_value += 1 
+#     total_votes += 1
 
-candidate_1 = ballot_box.count(candidate_1)
-candidate_2 = ballot_box.count(candidate_2)
-candidate_3 = ballot_box.count(candidate_3)
+# candidate_1 = ballot_box.count(candidate_1)
+# candidate_2 = ballot_box.count(candidate_2)
+# candidate_3 = ballot_box.count(candidate_3)
 
 
-print('Eleição finalizada, o resultado é: ')
-print(f'Candidato 1: {candidate_1}')
-print(f'Candidato 2: {candidate_2}')
-print(f'Candidato 3: {candidate_3}')
-print(f'Votos nulos: {default_value}')
+# print('Eleição finalizada, o resultado é: ')
+# print(f'Candidato 1: {candidate_1}')
+# print(f'Candidato 2: {candidate_2}')
+# print(f'Candidato 3: {candidate_3}')
+# print(f'Votos nulos: {default_value}')
 
-def votes_percent(x, y):
-    return int((x * (y / 100)) * 100)
+# def votes_percent(x, y):
+#     return int((x * (y / 100)) * 100)
 
-if candidate_1 > candidate_2 and candidate_1 > candidate_3:
-    print(f'Candidato 1 venceu com {votes_percent(total_votes, candidate_1)}% dos votos!')
-elif candidate_2 > candidate_1 and candidate_2 > candidate_3:
-    print(f'Candidato 2 venceu com {votes_percent(total_votes, candidate_2)}% dos votos!')
+# if candidate_1 > candidate_2 and candidate_1 > candidate_3:
+#     print(f'Candidato 1 venceu com {votes_percent(total_votes, candidate_1)}% dos votos!')
+# elif candidate_2 > candidate_1 and candidate_2 > candidate_3:
+#     print(f'Candidato 2 venceu com {votes_percent(total_votes, candidate_2)}% dos votos!')
+# else:
+#     print(f'Candidato 3 venceu com {votes_percent(total_votes, candidate_3)}% dos votos!')
+
+
+from random import choice
+from random import shuffle
+import string
+
+letters_quantity = int(input('Quantidade de letras : '))
+numbers_quantity = int(input('Quantidade de números : '))
+special_characters_quantity = int(input('Quantidade de caracteres especiais : '))
+
+
+pw = []
+
+print('Selecione (1) pra uma senha ordenada e (2) pra uma senha aleatória : ')
+option = int(input('Escolha a opção : '))
+
+letters = list(string.ascii_letters)
+numbers = list(string.digits)
+special_characters = list(string.punctuation)
+
+for i in range(letters_quantity):
+    pw.append(choice(letters))
+    
+for i in range(numbers_quantity):
+    pw.append(choice(numbers))
+    
+for i in range(special_characters_quantity):
+    pw.append(choice(special_characters))
+    
+if option == 1:
+    print(f'{"".join(pw)}')
 else:
-    print(f'Candidato 3 venceu com {votes_percent(total_votes, candidate_3)}% dos votos!')
+    aleatory_pw = []
+    new_pw = letters + numbers + special_characters
+    for i in range(letters_quantity + numbers_quantity + special_characters_quantity):
+        aleatory_pw.append(choice(new_pw))
+    print(f'{"".join(aleatory_pw)}')
