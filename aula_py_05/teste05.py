@@ -63,7 +63,9 @@
 # def votes_percent(x, y):
 #     return int((x * (y / 100)) * 100)
 
-# if candidate_1 > candidate_2 and candidate_1 > candidate_3:
+# if candidate_1 == candidate_2 and candidate_2 == candidate_03:
+#     print('Empate!')
+# elif candidate_1 > candidate_2 and candidate_1 > candidate_3:
 #     print(f'Candidato 1 venceu com {votes_percent(total_votes, candidate_1)}% dos votos!')
 # elif candidate_2 > candidate_1 and candidate_2 > candidate_3:
 #     print(f'Candidato 2 venceu com {votes_percent(total_votes, candidate_2)}% dos votos!')
@@ -71,8 +73,8 @@
 #     print(f'Candidato 3 venceu com {votes_percent(total_votes, candidate_3)}% dos votos!')
 
 
-from random import choice
-from random import shuffle
+from pyclbr import readmodule
+from random import choice, shuffle
 import string
 
 letters_quantity = int(input('Quantidade de letras : '))
@@ -101,8 +103,5 @@ for i in range(special_characters_quantity):
 if option == 1:
     print(f'{"".join(pw)}')
 else:
-    aleatory_pw = []
-    new_pw = letters + numbers + special_characters
-    for i in range(letters_quantity + numbers_quantity + special_characters_quantity):
-        aleatory_pw.append(choice(new_pw))
-    print(f'{"".join(aleatory_pw)}')
+    shuffle(pw)
+    print("".join(pw))

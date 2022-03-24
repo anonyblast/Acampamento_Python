@@ -51,3 +51,11 @@
   - While
 - Exercícios
 - Desafio Extra
+
+### AULA 06 (AULA FINAL)
+> Assuntos abordados 
+- Revisão rápida da aula anterior
+- Laços de Repetição
+  - For
+- Exercícios
+- Despedida
